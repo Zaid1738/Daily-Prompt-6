@@ -1,0 +1,354 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(royalblue,skyblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 70vw;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1px;
+    background-image: url(https://i.pinimg.com/564x/12/88/c3/1288c397f33c2c61323f091e4a856632.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.container> nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border-bottom: 1px solid black;
+    flex-direction: column;
+}
+.container >nav >img{
+    transition: 1s;
+    width: 3.5vw;
+}
+.container > nav> img:hover{
+    transform: rotate(-36deg);
+}
+.container > nav > ul{
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+    flex-direction: column;
+}
+.container > nav> ul >li{
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: .25s;
+    border-bottom: 1px solid transparent;
+}
+.container > nav> ul> li:hover{
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.container > nav> .icon> i{
+    font-size: 1.5vw;
+    margin-right:10px ;  
+    transition: .25s;
+}
+.container > nav >.icon > i:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.container > .left{
+    width: 50%; 
+    height: 100%;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6vh;   
+}
+.container > .left > .ticket-one{
+    width: 500px;
+    height: 200px;
+    background-color:#ffffff;
+    overflow: hidden;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+.ticket-one> .nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: skyblue;
+}
+.ticket-one> .nav img{
+    width: 2vw;
+}
+.ticket-one> .nav> h1{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: rgb(12, 95, 146);
+    text-decoration: underline black ; 
+}
+.ticket-one> .middle{
+    display: flex;
+    justify-content: center;
+}
+.ticket-one > .middle > h1{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1vw;
+    font-size: 50px;
+    color: rgb(10, 70, 94);
+}
+.ticket-one > .middle > h1 img{
+    width: 2vw;
+}
+.ticket-one > .foot{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 5px;
+}
+.ticket-one > .foot > .name{
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+.ticket-one > .foot > .name> p{
+    font-family: sans-serif;
+    font-size:10px ;
+    font-weight: 500;
+    color: rgb(22, 91, 8);
+    padding-bottom: 5px;
+}
+.ticket-one > .foot > .name> h1{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.ticket-one > .foot > .gate{
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+.ticket-one > .foot > .gate> p{
+    font-family: sans-serif;
+    font-size:10px ;
+    font-weight: 500;
+    color: rgb(121, 44, 133);
+    padding-bottom: 5px;
+}
+.ticket-one > .foot > .gate> h1{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.ticket-one > .foot > .depart{
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+.ticket-one > .foot > .depart> p{
+    font-family: sans-serif;
+    font-size:10px ;
+    font-weight: 500;
+    color: rgb(255, 47, 0);
+    padding-bottom: 5px;
+}
+.ticket-one > .foot > .depart> h1{
+    font-size: 9.7px;
+    font-family: sans-serif;
+}
+.ticket-one > .foot > .qr img{
+    height: 4vh;
+}
+.ticket-one > .destination{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+.ticket-one > .destination .to p{
+    font-family:serif;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.ticket-one > .destination .to h1{
+    font-family:sans-serif;
+    font-size: 20px;
+}
+.ticket-one > .destination .from p{
+    font-family:serif;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.ticket-one > .destination .from h1{
+    font-family:sans-serif;
+    font-size: 20px;
+}
+.container > .left > .ticket-two{
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+.ticket-two> .nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: skyblue;
+}
+.ticket-two> .nav img{
+    width: 2vw;
+}
+.ticket-two> .nav> h1{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: rgb(12, 95, 146);
+    text-decoration: underline black ; 
+}
+.ticket-two> .middle{
+    display: flex;
+    justify-content: center;
+}
+.ticket-two > .middle > h1{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1vw;
+    font-size: 50px;
+    color: rgb(10, 70, 94);
+}
+.ticket-two > .middle > h1 img{
+    width: 2vw;
+}
+.ticket-two > .foot{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 5px;
+}
+.ticket-two > .foot > .name{
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+.ticket-two > .foot > .name> p{
+    font-family: sans-serif;
+    font-size:10px ;
+    font-weight: 500;
+    color: rgb(22, 91, 8);
+    padding-bottom: 5px;
+}
+.ticket-two> .foot > .name> h1{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.ticket-two > .foot > .gate{
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+.ticket-two> .foot > .gate> p{
+    font-family: sans-serif;
+    font-size:10px ;
+    font-weight: 500;
+    color: rgb(121, 44, 133);
+    padding-bottom: 5px;
+}
+.ticket-two > .foot > .gate> h1{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.ticket-two > .foot > .depart{
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+.ticket-two > .foot > .depart> p{
+    font-family: sans-serif;
+    font-size:10px ;
+    font-weight: 500;
+    color: rgb(255, 47, 0);
+    padding-bottom: 5px;
+}
+.ticket-two> .foot > .depart> h1{
+    font-size: 9.7px;
+    font-family: sans-serif;
+}
+.ticket-two > .foot > .qr img{
+    height: 4vh;
+}
+.ticket-two> .destination{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+.ticket-two > .destination .to p{
+    font-family:serif;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.ticket-two > .destination .to h1{
+    font-family:sans-serif;
+    font-size: 20px;
+}
+.ticket-two > .destination .from p{
+    font-family:serif;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.ticket-two > .destination .from h1{
+    font-family:sans-serif;
+    font-size: 20px;
+}
+
+.container  .right{
+    width: 50%; 
+    overflow: hidden;  
+}
+.container > .right > .place{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+.container > .right > .place > p{
+    font-size: 30px ;
+    font-weight: 100;
+    font-family: "Cedarville Cursive", cursive;
+    color: rgb(96, 220, 234);
+}
+.container > .right > .place > h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: rgb(73, 189, 252);
+    color: #564878;
+    text-shadow: 5px 5px 10px;
+    margin-left: 10%;
+}
+.container > .right > .image {
+    width: 600px;
+}
+.container > .right > .image img{
+    object-fit: contain;
+    object-position: bottom;
+    width:60%;
+    border-radius: 10px;
+    margin-left: 10%;
+}
